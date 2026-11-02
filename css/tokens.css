@@ -1,0 +1,33 @@
+/* ==========================================================================
+   TOKENS DE MARCA
+   Identidad provisional inspirada en AWS / Student Community Day.
+   Para aplicar el branding oficial, cambia SOLO los valores de este archivo:
+   colores (HEX del manual) y familias tipográficas (y su <link> en index.html).
+   ========================================================================== */
+
+:root {
+  /* Color */
+  --ink:        #0B1530;  /* fondo principal (navy profundo) */
+  --ink-2:      #13214A;  /* superficies elevadas */
+  --line:       #2A3A6B;  /* líneas, bordes */
+  --paper:      #F4F1FF;  /* texto principal */
+  --muted:      #A9B2D6;  /* texto secundario */
+  --accent:     #FF9900;  /* acento principal (naranja AWS) */
+  --accent-2:   #9D7BFF;  /* acento secundario (lila) */
+  --danger:     #FF5C7A;  /* tachados / rechazos */
+
+  /* Tipografía */
+  --font-display: "Bricolage Grotesque", "Arial Narrow", system-ui, sans-serif;
+  --font-body:    "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono:    "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  /* Escala (en px del lienzo 1600×900, se escala completo) */
+  --t-hero:  148px;
+  --t-xl:    104px;
+  --t-l:     72px;
+  --t-m:     44px;
+  --t-s:     30px;
+  --t-xs:    20px;
+
+  color-scheme: dark;
+}
