@@ -544,3 +544,6 @@ body.show-ui .controls, .controls:focus-within { opacity: 1; }
 .cover .art--wide { width: 570px; right: 100px; }
 .cover .cover-title .display { font-size: 92px; white-space: nowrap; }
 .psi { font-size: 1.6em; }
+
+/* Ícono fijo de los separadores (letrero SCD) */
+.chapter-icon { width: auto; height: 190px; align-self: flex-start; filter: drop-shadow(0 10px 24px rgba(0,0,0,.4)); }
