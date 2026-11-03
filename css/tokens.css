@@ -1,33 +1,36 @@
 /* ==========================================================================
-   TOKENS DE MARCA
-   Identidad provisional inspirada en AWS / Student Community Day.
-   Para aplicar el branding oficial, cambia SOLO los valores de este archivo:
-   colores (HEX del manual) y familias tipográficas (y su <link> en index.html).
+   TOKENS DE MARCA · AWS Student Community Day CDMX 2026
+   Tomados de "Slides base speakers" (Canva) y de assets/img.
    ========================================================================== */
 
 :root {
   /* Color */
-  --ink:        #0B1530;  /* fondo principal (navy profundo) */
-  --ink-2:      #13214A;  /* superficies elevadas */
-  --line:       #2A3A6B;  /* líneas, bordes */
-  --paper:      #F4F1FF;  /* texto principal */
-  --muted:      #A9B2D6;  /* texto secundario */
-  --accent:     #FF9900;  /* acento principal (naranja AWS) */
-  --accent-2:   #9D7BFF;  /* acento secundario (lila) */
-  --danger:     #FF5C7A;  /* tachados / rechazos */
+  --ink:       #0E0E19;  /* fondo de las slides */
+  --ink-2:     #1A1222;  /* paneles */
+  --plum:      #281838;  /* morado de las grecas */
+  --line:      #3E2D4F;  /* bordes y líneas */
+  --paper:     #FFFFFF;  /* titulares */
+  --text:      #ECE8F5;  /* texto corrido */
+  --muted:     #8F86A8;  /* texto secundario */
+  --lilac:     #B9A7E0;  /* subtítulos pixel */
+  --orange:    #D85A2F;  /* acento 1 */
+  --teal:      #5DBEC2;  /* acento 2 */
+  --magenta:   #AB3B8D;  /* acento 3 */
+  --blue:      #4285C5;  /* acento 4 */
+  --accent:    var(--orange);
 
   /* Tipografía */
-  --font-display: "Bricolage Grotesque", "Arial Narrow", system-ui, sans-serif;
-  --font-body:    "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-mono:    "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --font-pixel: "Silkscreen", "Courier New", ui-monospace, monospace;
+  --font-head:  "Josefin Sans", "Century Gothic", "Futura", system-ui, sans-serif;
+  --font-mono:  "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
 
-  /* Escala (en px del lienzo 1600×900, se escala completo) */
-  --t-hero:  148px;
-  --t-xl:    104px;
-  --t-l:     72px;
+  /* Escala (px del lienzo 1600×900) */
+  --t-hero:  112px;
+  --t-xl:    88px;
+  --t-l:     64px;
   --t-m:     44px;
   --t-s:     30px;
-  --t-xs:    20px;
+  --t-xs:    22px;
 
   color-scheme: dark;
 }

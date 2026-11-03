@@ -9,11 +9,16 @@ Sitio estático en HTML, CSS y JavaScript, sin dependencias ni build. Listo para
 .
 ├── index.html        # Todas las diapositivas + notas del orador (guion)
 ├── css/
-│   ├── tokens.css    # Branding: colores y tipografías (cambia aquí la identidad)
-│   └── deck.css      # Layout y componentes de las diapositivas
+│   ├── tokens.css    # Branding SCD CDMX 2026: colores y tipografías
+│   ├── fonts.css     # @font-face de las fuentes incluidas
+│   └── deck.css      # Layout, marcos con grecas y componentes
 ├── js/
 │   └── deck.js       # Navegación, escalado, notas y cronómetro
-├── assets/           # Logos e imágenes del branding (identidad-XX.png)
+├── assets/
+│   ├── fonts/        # Silkscreen, Josefin Sans, JetBrains Mono (woff2, funcionan sin internet)
+│   └── img/
+│       ├── *.webp    # Originales de la identidad (alta resolución)
+│       └── web/      # Versiones optimizadas que usa la presentación
 └── vercel.json
 ```
 
@@ -32,12 +37,15 @@ Sitio estático en HTML, CSS y JavaScript, sin dependencias ni build. Listo para
 - El cronómetro arranca al pasar la portada y se pone en rojo si te pasas del minuto objetivo del bloque.
 - Las notas salen del `<aside class="notes">` de cada `<section>` en `index.html`.
 
-## Aplicar el branding oficial
+## Identidad visual
 
-1. Cambia los HEX y las familias en `css/tokens.css`.
-2. Si cambias de fuentes, actualiza el `<link>` de Google Fonts en `index.html`.
-3. Copia los logos a `assets/` y agrégalos donde los necesites (p. ej. en la portada o el `.hud`).
-4. Reemplaza `[Nombre de la ponente]` en la portada y en el cierre.
+Basada en el kit de speakers del AWS Student Community Day CDMX 2026:
+
+- **Color:** fondo `#0E0E19`, naranja `#D85A2F`, turquesa `#5DBEC2`, magenta `#AB3B8D`, azul `#4285C5`, lila `#B9A7E0`. Cada bloque de la charla usa un acento.
+- **Tipografía:** Silkscreen (pixel) para etiquetas, portada y separadores; Josefin Sans Bold para titulares.
+- **Gráficos:** cenefa y esquinas de grecas (`56`, `57`), trazos de luz (`58`, `59`), ilustraciones de la CDMX y Fetch, la mascota.
+- Para cambiar una ilustración: optimízala a `assets/img/web/` y cambia el `src` del `<img class="art">` en `index.html`.
+- Falta reemplazar `[Nombre de la ponente]` en la portada y en el cierre.
 
 ## Correr en local
 
