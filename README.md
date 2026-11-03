@@ -1,6 +1,6 @@
-# Más allá del código
+# Error 404: Experiencia laboral no encontrada
 
-Presentación web para la charla **"Más allá del código: El algoritmo de la actitud y la resiliencia"** (30 min).
+Presentación web para la charla **"Error 404: Experiencia laboral no encontrada"** de Janderi Martínez (30 min) en el AWS Student Community Day CDMX 2026.
 Sitio estático en HTML, CSS y JavaScript, sin dependencias ni build. Listo para Vercel.
 
 ## Estructura
@@ -45,7 +45,6 @@ Basada en el kit de speakers del AWS Student Community Day CDMX 2026:
 - **Tipografía:** Silkscreen (pixel) para etiquetas, portada y separadores; Josefin Sans Bold para titulares.
 - **Gráficos:** cenefa y esquinas de grecas (`56`, `57`), trazos de luz (`58`, `59`), ilustraciones de la CDMX y Fetch, la mascota.
 - Para cambiar una ilustración: optimízala a `assets/img/web/` y cambia el `src` del `<img class="art">` en `index.html`.
-- Falta reemplazar `[Nombre de la ponente]` en la portada y en el cierre.
 
 ## Correr en local
 

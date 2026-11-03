@@ -14,11 +14,11 @@
   // Minuto en que termina cada bloque (según el guion de 30 min)
   const BLOCKS = {
     0: { name: "Portada", end: 0 },
-    1: { name: "Bloque 1 · El gancho y la mentira", start: 0, end: 5 },
+    1: { name: "01 · Nos han hecho creer", start: 0, end: 5 },
     2: { name: "Bloque 2 · El choque de mundos", start: 5, end: 13 },
-    3: { name: "Bloque 3 · El volante de tu carrera", start: 13, end: 22 },
-    4: { name: "Bloque 4 · La vulnerabilidad y el ritmo", start: 22, end: 27 },
-    5: { name: "Bloque 5 · El llamado a la acción", start: 27, end: 30 },
+    3: { name: "03 · Tú eres el protagonista de tu propio desarrollo", start: 13, end: 22 },
+    4: { name: "04 · Equilibrio vida-trabajo", start: 22, end: 27 },
+    5: { name: "05 · Hoy es el día perfecto para iniciar", start: 27, end: 30 },
   };
 
   const stage = document.getElementById("stage");
