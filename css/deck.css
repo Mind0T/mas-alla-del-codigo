@@ -548,20 +548,13 @@ body.show-ui .controls, .controls:focus-within { opacity: 1; }
 /* Ícono fijo de los separadores (letrero SCD) */
 .chapter-icon { width: auto; height: 190px; align-self: flex-start; filter: drop-shadow(0 10px 24px rgba(0,0,0,.4)); }
 
-/* Separadores: texto a la izquierda, Metro a la derecha (sin encimarse) */
-.slide.chapter {
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 64px;
-  padding-right: 150px;
-}
-.chapter-text { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 26px; }
-.chapter-text .display { font-size: 72px; }
-.chapter-art {
-  flex: none;
-  width: 600px;
-  max-width: 48%;
-  height: auto;
-  filter: drop-shadow(0 18px 40px rgba(0,0,0,.45));
+/* Separadores: título protagonista + ícono pequeño */
+.slide.chapter { padding-right: 150px; justify-content: center; }
+.chapter-text { display: flex; flex-direction: column; gap: 28px; max-width: 1100px; }
+.chapter-text .display { font-size: 92px; }
+.chapter-icon {
+  width: auto;
+  height: 120px;
+  align-self: flex-start;
+  filter: drop-shadow(0 8px 18px rgba(0,0,0,.4));
 }
