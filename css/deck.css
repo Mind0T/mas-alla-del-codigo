@@ -558,3 +558,35 @@ body.show-ui .controls, .controls:focus-within { opacity: 1; }
   align-self: flex-start;
   filter: drop-shadow(0 8px 18px rgba(0,0,0,.4));
 }
+
+/* Contacto: códigos QR */
+.slide.contact {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 72px;
+}
+.contact-intro { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 28px; }
+.contact-intro .h-xl { font-size: 84px; }
+.qr-row { flex: none; display: flex; gap: 44px; }
+.qr-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  color: var(--text);
+}
+.qr-tile {
+  display: block;
+  width: 320px;
+  height: 320px;
+  padding: 14px;
+  background: #FFFFFF;
+  border-radius: 18px;
+  box-shadow: 0 0 0 6px var(--plum), 0 18px 40px rgba(0,0,0,.45);
+}
+.qr-tile img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.qr-name { font-family: var(--font-pixel); font-size: 30px; text-transform: uppercase; margin-top: 10px; }
+.qr-handle { font-family: var(--font-head); font-weight: 600; font-size: 24px; color: var(--lilac); }
+.qr-card:focus-visible { outline: 3px solid var(--teal); outline-offset: 8px; }

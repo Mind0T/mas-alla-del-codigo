@@ -149,6 +149,7 @@
 
   /* ---------- Clic en mitades del lienzo ---------- */
   stage.addEventListener("click", function (e) {
+    if (e.target.closest("a")) return; // los QR abren su enlace sin cambiar de slide
     const r = stage.getBoundingClientRect();
     (e.clientX - r.left) > r.width / 2 ? next() : prev();
   });
